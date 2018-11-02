@@ -9,10 +9,10 @@
 import Foundation
 import Alamofire
 
+
 let GROUPNAME_KEY = "GroupName"
 let GROUPNAME = "cp102"
 let USERNAME_KEY = "UserName"
-let MY_NAME = "Tony"
 let LAT_KEY = "Lat"
 let LON_KEY = "Lon"
 let RESULT_KEY = "result"
@@ -21,6 +21,7 @@ let RESULT_KEY = "result"
 typealias DoneHandler = (_ result: [String : Any]?, _ error: Error?) -> Void
 
 class Communicator {
+    static var MY_NAME = "Tony"
     
     // Constants
     static let BASEURL = "http://class.softarts.cc/FindMyFriends/"
@@ -33,9 +34,9 @@ class Communicator {
     }
     
     // MARK: - Public methods.
-    func updateLocation(lat: Float, lon: Float, completion: @escaping DoneHandler) {
+    func updateLocation(lat: Double, lon: Double, completion: @escaping DoneHandler) {
         
-        let urlString = "\(UPDATELOCATION_URL)\(GROUPNAME_KEY)=\(GROUPNAME)&\(USERNAME_KEY)=\(MY_NAME)&\(LAT_KEY)=\(lat)&\(LON_KEY)=\(lon)"
+        let urlString = "\(UPDATELOCATION_URL)\(GROUPNAME_KEY)=\(GROUPNAME)&\(USERNAME_KEY)=\(Communicator.MY_NAME)&\(LAT_KEY)=\(lat)&\(LON_KEY)=\(lon)"
         
         print(urlString)
         
@@ -89,5 +90,3 @@ class Communicator {
         
     }
 }
-
-

@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import MapKit
 
 struct Friend: Codable {
     var friendName: String
-    var id: Int
-    var lastUpdateDateTime: Date
-    var lat: Float
-    var lon: Float
+    var id: String
+    var lastUpdateDateTime: String
+    var lat: String
+    var lon: String
     enum CodingKeys: String, CodingKey {
         case friendName = "friendName"
         case id = "id"

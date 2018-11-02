@@ -8,16 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		195D37BC2BA2F63620407134 /* Pods_FindMyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38312FA032B7076BEA9C9C66 /* Pods_FindMyFriends.framework */; };
+		2B397188218C505E009E36BD /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B397187218C505E009E36BD /* FriendsTableViewController.swift */; };
+		2B39718C218D8232009E36BD /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B39718B218D8232009E36BD /* FriendTableViewCell.swift */; };
 		2B75F66B217E238C003FD4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75F66A217E238C003FD4BD /* AppDelegate.swift */; };
 		2B75F66D217E238C003FD4BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75F66C217E238C003FD4BD /* ViewController.swift */; };
 		2B75F670217E238C003FD4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B75F66E217E238C003FD4BD /* Main.storyboard */; };
 		2B75F672217E238E003FD4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B75F671217E238E003FD4BD /* Assets.xcassets */; };
 		2B75F675217E238E003FD4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B75F673217E238E003FD4BD /* LaunchScreen.storyboard */; };
+		2BDA32FF21934BC300FFA968 /* LogLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA32FE21934BC300FFA968 /* LogLocation.swift */; };
 		2BED0940218AA3E000C5B17C /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED093F218AA3E000C5B17C /* Communicator.swift */; };
 		2BED0966218B32CC00C5B17C /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED0965218B32CC00C5B17C /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B397187218C505E009E36BD /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		2B39718B218D8232009E36BD /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		2B75F667217E238C003FD4BD /* FindMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B75F66A217E238C003FD4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B75F66C217E238C003FD4BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +30,7 @@
 		2B75F671217E238E003FD4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B75F674217E238E003FD4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B75F676217E238E003FD4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDA32FE21934BC300FFA968 /* LogLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLocation.swift; sourceTree = "<group>"; };
 		2BED093F218AA3E000C5B17C /* Communicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
 		2BED0965218B32CC00C5B17C /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		38312FA032B7076BEA9C9C66 /* Pods_FindMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,7 @@
 			children = (
 				2BED093F218AA3E000C5B17C /* Communicator.swift */,
 				2BED0965218B32CC00C5B17C /* Friend.swift */,
+				2BDA32FE21934BC300FFA968 /* LogLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				2B75F66C217E238C003FD4BD /* ViewController.swift */,
+				2B397187218C505E009E36BD /* FriendsTableViewController.swift */,
+				2B39718B218D8232009E36BD /* FriendTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,10 +197,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FindMyFriends/Pods-FindMyFriends-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,7 +237,10 @@
 				2BED0940218AA3E000C5B17C /* Communicator.swift in Sources */,
 				2B75F66D217E238C003FD4BD /* ViewController.swift in Sources */,
 				2B75F66B217E238C003FD4BD /* AppDelegate.swift in Sources */,
+				2B39718C218D8232009E36BD /* FriendTableViewCell.swift in Sources */,
 				2BED0966218B32CC00C5B17C /* Friend.swift in Sources */,
+				2B397188218C505E009E36BD /* FriendsTableViewController.swift in Sources */,
+				2BDA32FF21934BC300FFA968 /* LogLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +389,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378NT6B6N9;
 				INFOPLIST_FILE = FindMyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,7 +412,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378NT6B6N9;
 				INFOPLIST_FILE = FindMyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

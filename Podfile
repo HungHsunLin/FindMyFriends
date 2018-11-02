@@ -9,6 +9,7 @@ target 'FindMyFriends' do
 
   # Pods for FindMyFriends
   pod 'Alamofire'
+  pod 'SQLite.swift'
   pod 'SwiftLint'
   
 end

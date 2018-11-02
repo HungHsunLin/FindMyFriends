@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "271A5A63B3F94069B699C63AB4B3FF8A"
-               BlueprintName = "Pods-FindMyFriends"
+               BlueprintIdentifier = "FD4FD51CF16CCADFBC224B0F4662B027"
+               BlueprintName = "SQLite.swift"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-FindMyFriends.framework">
+               BuildableName = "SQLite.swift.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
