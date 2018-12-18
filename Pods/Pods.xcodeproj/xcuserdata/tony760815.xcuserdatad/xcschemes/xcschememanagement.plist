@@ -17,7 +17,11 @@
 		<key>SQLite.swift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>3</integer>
+=======
+			<integer>2</integer>
+>>>>>>> develope
 		</dict>
 	</dict>
 </dict>
