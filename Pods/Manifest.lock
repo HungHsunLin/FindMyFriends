@@ -1,20 +1,26 @@
 PODS:
   - Alamofire (4.7.3)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - Alamofire
+  - SQLite.swift
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SQLite.swift
     - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 5ebd97121bdd7739f6cb66270d19bcfd677caa33
+PODFILE CHECKSUM: d1885d2663e7f164071e00348977cbf73b1684c4
 
 COCOAPODS: 1.5.2
