@@ -19,7 +19,17 @@ class FriendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.reloadData()
+        // row的高度
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        // 開啟 Cell 自動列高
+        tableView.estimatedRowHeight = 100
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source

@@ -11,7 +11,7 @@ import Alamofire
 
 
 let GROUPNAME_KEY = "GroupName"
-let GROUPNAME = "cp102"
+let GROUPNAME = "yourGroup"
 let USERNAME_KEY = "UserName"
 let LAT_KEY = "Lat"
 let LON_KEY = "Lon"
@@ -24,7 +24,7 @@ class Communicator {
     static var MY_NAME = "Tony"
     
     // Constants
-    static let BASEURL = "http://class.softarts.cc/FindMyFriends/"
+    static let BASEURL = "http://yourServer/"
     let UPDATELOCATION_URL = BASEURL + "updateUserLocation.php?"
     let QUERY_FRIENDS_LOCATIONS_URL = BASEURL + "queryFriendLocations.php?"
     
